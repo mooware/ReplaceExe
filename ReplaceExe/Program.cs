@@ -45,8 +45,8 @@ namespace ReplaceExe
 
     static void Uninstall(string image)
     {
-      var baseKey = Registry.LocalMachine.OpenSubKey(regBasePath);
-      var key = baseKey.OpenSubKey(image);
+      var baseKey = Registry.LocalMachine.OpenSubKey(regBasePath, true);
+      var key = baseKey.OpenSubKey(image, true);
       if (key != null)
         key.DeleteValue(regValueName, false);
     }
