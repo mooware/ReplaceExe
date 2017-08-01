@@ -6,7 +6,7 @@ Windows tool allowing replacement of "notepad.exe" (or any executable) with othe
 
 ReplaceExe is my approach for replacing the atrocious "notepad.exe", which often pops up as a default text viewer and editor.
 
-It uses a Windows feature called `Image File Execution Options`, which allows configuration of various debug options per "image name" (e.g. "notepad.exe"). One of this options is a per-image debugger; when a new process with the configured image name is started, the configured "debugger" will be started instead, with the image name and any process arguments passed to it.
+It uses a Windows feature called `Image File Execution Options`, which allows configuration of various debug options per "image name" (e.g. "notepad.exe"). One of these options is a per-image debugger; when a new process with the configured image name is started, the configured "debugger" will be started instead, with the image name and any process arguments passed to it.
 
 ReplaceExe can be installed as such a "debugger", and will forward the invokation to the specified command.
 
